@@ -160,7 +160,7 @@ class NVD3Chart(object):
         self.header_js = [
             '<script src="%s"></script>' % h for h in
             (
-                'https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js' if self.remote_js_assets else self.assets_directory + 'd3/d3.min.js',
+                'https://cdnjs.cloudflare.com/ajax/libs/d3/3.2.0/d3.min.js' if self.remote_js_assets else self.assets_directory + 'd3/d3.min.js',
                 'https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.7.0/nv.d3.min.js' if self.remote_js_assets else self.assets_directory + 'nvd3/nv.d3.min.js'
             )
         ]
